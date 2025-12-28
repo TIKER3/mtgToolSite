@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MTG Tools Portal | tiker1903</title>
+  <title>MTG Tools Portal | タケ</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -45,6 +45,10 @@
       text-align: center;
     }
 
+    header {
+      margin-bottom: 3rem;
+    }
+
     header h1 {
       font-size: 2rem;
       margin-bottom: 0.5rem;
@@ -53,7 +57,34 @@
 
     header p {
       color: var(--text-secondary);
-      margin-bottom: 3rem;
+      margin: 0 0 16px 0;
+    }
+
+    /* X (Twitter) リンクのスタイル */
+    .x-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      padding: 8px 16px;
+      border: 1px solid var(--border-color);
+      border-radius: 99px;
+      background: rgba(255, 255, 255, 0.03);
+      transition: all 0.2s ease;
+    }
+    
+    .x-link:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-primary);
+      border-color: var(--text-secondary);
+    }
+
+    .x-link svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
     }
 
     /* リンクカードのグリッドレイアウト */
@@ -145,7 +176,14 @@
   <div class="container">
     <header>
       <h1>MTG Tools Portal</h1>
-      <p>tiker1903 が作成した MTG 関連ツールのリンク集です。</p>
+      <p>タケ が作成した MTG 関連ツールのリンク集です。</p>
+      
+      <a href="https://x.com/take1991_mtg" target="_blank" rel="noopener" class="x-link">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+        </svg>
+        @take1991_mtg
+      </a>
     </header>
 
     <main class="grid-links">
@@ -181,7 +219,7 @@
     </main>
 
     <footer>
-      © tiker1903
+      © タケ
     </footer>
   </div>
 
