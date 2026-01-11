@@ -19,6 +19,7 @@
       --accent-diary: #f87171; /* ダイアリー用アクセントカラー（赤色） */
       --accent-point: #4ade80; /* ポイント管理用アクセントカラー（緑色） */
       --accent-version: #a855f7; /* 版検索用アクセントカラー（紫色） */
+      --accent-matching: #f97316; /* マッチング用アクセントカラー（オレンジ色） */
       --border-color: #334155; /* 境界線 */
     }
 
@@ -174,12 +175,20 @@
       fill: none;
     }
 
-    /* 新規追加: カード版検索用 */
     .card-version:hover {
       border-color: var(--accent-version);
     }
     .card-version .icon-area svg {
       stroke: var(--accent-version);
+      fill: none;
+    }
+
+    /* 新規追加: マッチングツール用 */
+    .card-matching:hover {
+      border-color: var(--accent-matching);
+    }
+    .card-matching .icon-area svg {
+      stroke: var(--accent-matching);
       fill: none;
     }
 
@@ -266,6 +275,21 @@
         </div>
         <h2>カード版・イラスト検索</h2>
         <p>Scryfall APIを使用して、指定したカードの歴代イラスト・バージョン違いを一覧表示するツールです。</p>
+      </a>
+
+      <a href="https://tiker3.github.io/mtgMatchig/" class="link-card card-matching" target="_blank" rel="noopener">
+        <div class="icon-area">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 6h8" />
+            <path d="M4 18h8" />
+            <path d="M12 6v12" />
+            <path d="M12 12h8" />
+            <circle cx="20" cy="12" r="1" fill="currentColor" />
+          </svg>
+        </div>
+        <h2>大会ペアリング管理</h2>
+        <p>ドラフトや構築戦でのペアリング作成・勝敗管理を行うトーナメントツールです。</p>
       </a>
 
     </main>
